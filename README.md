@@ -2,6 +2,7 @@
 Este proyecto es una aplicación web desarrollada con Flask que combina un modelo predictivo basado en TensorFlow con herramientas de análisis de datos como Pandas. Además, incluye un asistente de IA interactivo capaz de responder preguntas relacionadas con los datos y generar reportes visuales mediante gráficos. La aplicación también consume datos de APIs externas para enriquecer los análisis y reportes.
 Estructura de archivos del proyecto
 
+```bash
 AI-DataAssistant/
 │
 ├── app.py                 # Archivo principal de la aplicación Flask.
@@ -41,9 +42,10 @@ AI-DataAssistant/
     ├── test_app.py        # Pruebas para rutas de Flask.
     ├── test_model.py      # Pruebas para el modelo predictivo.
     └── test_utils.py      # Pruebas para utilidades.
+```
 
-Dependencias principales (requirements.txt)
-
+## Dependencias principales (requirements.txt)
+```bash
 Flask==2.2.2
 Flask-Cors==3.0.10
 pandas==2.0.3
@@ -55,23 +57,30 @@ requests==2.31.0
 openai==0.27.6  # Si usas la API de OpenAI para el asistente IA.
 scikit-learn==1.3.0
 gunicorn==20.1.0  # Para despliegue en producción.
+```
 
-Pasos iniciales
+## Pasos iniciales
 
-    Clona el repositorio
+Clona el repositorio
 
+```bash
 git clone https://github.com/tu_usuario/AI-DataAssistant.git
 cd AI-DataAssistant
+```
 
 Crea un entorno virtual e instala dependencias
 
+```bash
 python3 -m venv venv
 source venv/bin/activate  # En Windows: venv\Scripts\activate
 pip install -r requirements.txt
+```
 
 Ejecuta la aplicación
 
+```bash
 flask run
+```
 
 Abre en el navegador
 Ve a http://127.0.0.1:5000 para ver la aplicación en acción.
